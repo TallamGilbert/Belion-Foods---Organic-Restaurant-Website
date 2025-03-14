@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belion Foods - Kenya</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/responsive.css">
+    <link rel="stylesheet" href="/assets/css/animations.css">
+    <script defer src="assets/js/main.js"></script>
+    <script defer src="assets/js/form-validation.js"></script>
+    <script defer src="assets/js/slider.js"></script>
+    
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="/assets/images/logo.png" alt="Belion Foods Logo">    
+                    <span class="logo-text">Belion Foods</span>
+                </div>
+                
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#why-us">About</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#reservation">Reservation</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="nav-icon theme-toggle">
+                    <i class="fas fa-moon"></i>
+                  </div>
+                <div class="nav-icons">
+                    <div class="nav-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="nav-icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="nav-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">7</span>
+                    </div>
+                </div>
+                
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Experience <span style="color: #4CAF50;">Organic</span> Dining in Kenya</h1>
+                <p class="hero-description">Discover the finest organic ingredients sourced from local Kenyan farmers, prepared with care and creativity.</p>
+                <div class="hero-btns">
+                    <a href="#menu" class="btn hero-btn">Explore Menu</a>
+                    <a href="#reservation" class="btn hero-btn">Book a Table</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Popular Dishes Section -->
+    <section class="section popular-dishes" id="popular">
+        <div class="container">
+            <h2 class="section-title fade-in">Our Popular Dishes</h2>
+            <div class="dishes-grid">
+                <div class="dish-card fade-in">
+                    <img src="/assets/images/Vegetable Curry.jpeg" alt="Dish 1" class="dish-img">
+                    <div class="dish-info">
+                        <h3 class="dish-title">Organic Vegetable Curry</h3>
+                        <p class="dish-description">Farm-fresh vegetables cooked in aromatic spices and coconut milk.</p>
+                        <div class="dish-price">KSh 850</div>
+                        <div class="dish-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(4.5)</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="dish-card fade-in">
+                    <img src="/assets/images/Tilapia.jpeg" alt="Dish 2" class="dish-img">
+                    <div class="dish-info">
+                        <h3 class="dish-title">Grilled Tilapia with Kachumbari</h3>
+                        <p class="dish-description">Fresh tilapia grilled to perfection, served with traditional Kenyan salsa.</p>
+                        <div class="dish-price">KSh 1,200</div>
+                        <div class="dish-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(5.0)</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="dish-card fade-in">
+                    <img src="/assets/images/Nyama Choma.jpeg" alt="Dish 3" class="dish-img">
+                    <div class="dish-info">
+                        <h3 class="dish-title">Nyama Choma</h3>
+                        <p class="dish-description">Grass-fed beef or goat, slow-roasted to perfection with herbs and spices.</p>
+                        <div class="dish-price">KSh 1,400</div>
+                        <div class="dish-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(4.0)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="section why-us" id="why-us">
+        <div class="container">
+            <h2 class="section-title fade-in">Why Choose Us</h2>
+            <div class="why-us-grid">
+                <div class="why-us-item fade-in">
+                    <div class="why-us-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3 class="why-us-title">100% Organic</h3>
+                    <p class="why-us-description">We source all our ingredients from certified organic farms across Kenya, ensuring the highest quality and sustainability.</p>
+                </div>
+                
+                <div class="why-us-item fade-in">
+                    <div class="why-us-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3 class="why-us-title">Expert Chefs</h3>
+                    <p class="why-us-description">Our talented chefs combine traditional Kenyan flavors with modern culinary techniques to create unforgettable dining experiences.</p>
+                </div>
+                
+                <div class="why-us-item fade-in">
+                    <div class="why-us-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3 class="why-us-title">Farm to Table</h3>
+                    <p class="why-us-description">We work directly with local farmers to bring you the freshest ingredients, supporting our community and reducing our carbon footprint.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Why Choose Us Section -->
+    <section class="section why-us" id="why-us">
+        <div class="container">
+            <h2 class="section-title fade-in">Our Story</h2>
+            <p style="text-align: center;" class="why-us-description">From a simple vision to a beloved organic dining destination, our journey is driven by tradition, sustainability, and a commitment to fresh, wholesome flavors.</p>
+            <br>
+             <!-- Our Story Section -->
+            <section id="our-story" class="our-story">
+                
+                <div class="timeline">
+                    <div class="timeline-event">
+                        <span class="timeline-date">2020</span>
+                        <div class="our-story-item">
+                            <h3>A Passion for Organic Living</h3>
+                            <p>Our journey began with a deep love for fresh, natural ingredients and a vision to bring wholesome, organic meals to our community. </p>
+                        </div>
+                    </div>
+                    <div class="timeline-event">
+                        <span class="timeline-date">2022</span>
+                        <div class="our-story-item">
+                            <h3>Embracing Sustainability</h3>
+                            <p>We partnered with local farmers to ensure that every ingredient used in our kitchen is organic, fresh, and sustainably sourced. </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-event">
+                        <span class="timeline-date">2024</span>
+                        <div class="our-story-item">
+                            <h3>Farm-to-Table Commitment</h3>
+                            <p class="why-us-description">We partnered with local farmers to ensure that every ingredient used in our kitchen is organic, fresh, and sustainably sourced. </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-event">
+                        <span class="timeline-date">Now</span>
+                        <div class="our-story-item">
+                            <h3>A Modern Organic Dining Experience</h3>
+                            <p>We partnered with local farmers to ensure that every ingredient used in our kitchen is organic, fresh, and sustainably sourced. </p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="section menu" id="menu">
+        <div class="container">
+            <h2 class="section-title fade-in">Explore Our Menu</h2>
+            <div class="menu-categories">
+                <div class="menu-category" data-category="breakfast">Breakfast</div>
+                <div class="menu-category" data-category="lunch">Lunch</div>
+                <div class="menu-category" data-category="dinner">Dinner</div>
+                <div class="menu-category" data-category="drinks">Drinks</div>
+                <div class="menu-category" data-category="desserts">Desserts</div>
+            </div>
+            
+            <div class="menu-items">
+                <div class="menu-item fade-in" data-category="breakfast">
+                    <img src="/assets/images/Organic Eggs Benedict.jpeg" alt="Menu Item 1" class="menu-item-img">
+                    <div class="menu-item-info">
+                        <h3 class="menu-item-title">Organic Eggs Benedict</h3>
+                        <p class="menu-item-description">Farm-fresh poached eggs on toasted brioche with avocado and hollandaise sauce</p>
+                        <div class="menu-item-price">KSh 750</div>
+                    </div>
+                </div>
+
+                <div class="menu-item fade-in" data-category="drinks">
+                    <img src="/assets/images/kenyan-chai.jpeg" alt="Kenyan Chai" class="menu-item-img">
+                    <div class="menu-item-info">
+                        <h3 class="menu-item-title">Traditional Kenyan Chai</h3>
+                        <p class="menu-item-description">Strong black tea simmered with milk, cardamom, cinnamon and other warming spices</p>
+                        <div class="menu-item-price">KSh 250</div>
+                    </div>
+                </div>
+                
+                <div class="menu-item fade-in" data-category="drinks">
+                    <img src="/assets/images/tangawizi.jpeg" alt="Tangawizi" class="menu-item-img">
+                    <div class="menu-item-info">
+                        <h3 class="menu-item-title">Tangawizi (Ginger Tea)</h3>
+                        <p class="menu-item-description">Spicy ginger tea with lemon and honey, known for its warming and healing properties</p>
+                        <div class="menu-item-price">KSh 280</div>
+                    </div>
+                </div>
+                
+                <div class="menu-item fade-in" data-category="lunch">
+                    <img src="/assets/images/Kenyan Pilau.jpeg" alt="Menu Item 2" class="menu-item-img">
+                    <div class="menu-item-info">
+                        <h3 class="menu-item-title">Kenyan Pilau</h3>
+                        <p class="menu-item-description">Aromatic rice cooked with organic spices, vegetables, and your choice of protein</p>
+                        <div class="menu-item-price">KSh 950</div>
+                    </div>
+                </div>
+
+                <div class="menu-item fade-in" data-category="lunch">
+                    <img src="/assets/images/nyama choma.jpeg" alt="Nyama Choma" class="menu-item-img">
+                    <div class="menu-item-info">
+                        <h3 class="menu-item-title">Traditional Nyama Choma</h3>
+                        <p class="menu-item-description">Slow-grilled goat meat marinated in local herbs and spices, served with kachumbari and ugali</p>
+                        <div class="menu-item-price">KSh 950</div>
+                    </div>
+                </div>
+                
+                <div class="menu-item fade-in" data-category="lunch">
+                    <img src="/assets/images/Kenyan Pilau.jpeg" alt="Pilau" class="menu-item-img">
+                    <div class="menu-item-info">
+                        <h3 class="menu-item-title">Swahili Beef Pilau</h3>
+                        <p class="menu-item-description">Fragrant rice cooked with tender beef cubes and aromatic Swahili spices, served with kachumbari</p>
+                        <div class="menu-item-price">KSh 750</div>
+                    </div>
+                </div>
+                
+                <div class="menu-item fade-in" data-category="dinner">
+                    <img src="/assets/images/Beef Fillet.jpeg" alt="Menu Item 3" class="menu-item-img">
+                    <div class="menu-item-info">
+                        <h3 class="menu-item-title">Grass-Fed Beef Fillet</h3>
+                        <p class="menu-item-description">Locally sourced beef fillet with roasted vegetables and herb butter</p>
+                        <div class="menu-item-price">KSh 1,600</div>
+                    </div>
+                </div>
+
+                <div class="menu-item fade-in" data-category="dinner">
+                    <img src="/assets/images/mbuzi-choma.jpeg" alt="Mbuzi Choma" class="menu-item-img">
+                    <div class="menu-item-info">
+                        <h3 class="menu-item-title">Prime Mbuzi Choma Platter</h3>
+                        <p class="menu-item-description">Slow-roasted goat meat with Kenyan herbs, served with ugali, kachumbari and grilled vegetables</p>
+                        <div class="menu-item-price">KSh 1200</div>
+                    </div>
+                </div>
+
+                <div class="menu-item fade-in" data-category="dinner">
+                    <img src="/assets/images/kamande-stew.jpeg" alt="Kamande Stew" class="menu-item-img">
+                    <div class="menu-item-info">
+                        <h3 class="menu-item-title">Beef and Kamande Stew</h3>
+                        <p class="menu-item-description">Tender beef chunks simmered with lentils in a rich tomato and onion gravy, served with coconut rice</p>
+                        <div class="menu-item-price">KSh 950</div>
+                    </div>
+                 </div>
+                
+                <div class="menu-item fade-in" data-category="breakfast">
+                    <img src="/assets/images/Passion Fruit Cheesecake.jpeg" alt="Menu Item 4" class="menu-item-img">
+                    <div class="menu-item-info">
+                        <h3 class="menu-item-title">Passion Fruit Cheesecake</h3>
+                        <p class="menu-item-description">Creamy cheesecake with local passion fruit topping</p>
+                        <div class="menu-item-price">KSh 550</div>
+                    </div>
+                </div>
+                
+                <div class="menu-item fade-in" data-category="drinks">
+                    <img src="/assets/images/Organic Kenyan Coffee.jpeg" alt="Menu Item 5" class="menu-item-img">
+                    <div class="menu-item-info">
+                        <h3 class="menu-item-title">Organic Kenyan Coffee</h3>
+                        <p class="menu-item-description">Premium Kenyan coffee served with options of dairy or plant-based milk</p>
+                        <div class="menu-item-price">KSh 350</div>
+                    </div>
+                </div>
+                
+                <div class="menu-item fade-in" data-category="breakfast">
+                    <img src="/assets/images/Fruit Platter.jpeg" alt="Menu Item 6" class="menu-item-img">
+                    <div class="menu-item-info">
+                        <h3 class="menu-item-title">Organic Fruit Platter</h3>
+                        <p class="menu-item-description">Selection of fresh seasonal fruits from local farms</p>
+                        <div class="menu-item-price">KSh 650</div>
+                    </div>
+                </div>
+
+                <div class="menu-item fade-in" data-category="desserts">
+                    <img src="/assets/images/mandazi-dessert.jpeg" alt="Mandazi Dessert" class="menu-item-img">
+                    <div class="menu-item-info">
+                        <h3 class="menu-item-title">Sweet Mandazi with Ice Cream</h3>
+                        <p class="menu-item-description">Warm cardamom-spiced donuts served with vanilla ice cream and honey drizzle</p>
+                        <div class="menu-item-price">KSh 450</div>
+                    </div>
+                </div>
+                
+                <div class="menu-item fade-in" data-category="desserts">
+                    <img src="/assets/images/mahamri-dessert.jpeg" alt="Mahamri Dessert" class="menu-item-img">
+                    <div class="menu-item-info">
+                        <h3 class="menu-item-title">Mahamri with Chocolate Sauce</h3>
+                        <p class="menu-item-description">Coconut-flavored triangular donuts served with rich chocolate sauce and fresh berries</p>
+                        <div class="menu-item-price">KSh 420</div>
+                    </div>
+                </div>
+                
+                <div class="menu-item fade-in" data-category="desserts">
+                    <img src="/assets/images/kashata.jpeg" alt="Kashata" class="menu-item-img">
+                    <div class="menu-item-info">
+                        <h3 class="menu-item-title">Kashata (Coconut Peanut Brittle)</h3>
+                        <p class="menu-item-description">Traditional Swahili sweet made with caramelized sugar, coconut and peanuts</p>
+                        <div class="menu-item-price">KSh 300</div>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="menu-btn">
+                <a href="full-menu.html" class="btn">View Full Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section class="section reservation" id="reservation">
+        <div class="container">
+            <div class="reservation-content">
+                <div class="reservation-info fade-in">
+                    <h2>Book Your Table</h2>
+                    <p>Experience the best organic cuisine in Kenya. Reserve your table now and enjoy a memorable dining experience with your loved ones.</p>
+                    <p>For large groups or special events, please contact us directly at <strong>+254 743 854 585</strong>.</p>
+                </div>
+                
+                <div class="reservation-form fade-in">
+                    <form id="booking-form">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="date">Date</label>
+                                <input type="date" id="date" class="form-control" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="time">Time</label>
+                                <input type="time" id="time" class="form-control" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="guests">Number of Guests</label>
+                            <input type="number" id="guests" class="form-control" min="1" max="20" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Special Requests</label>
+                            <textarea id="message" class="form-control" rows="3"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn reservation-btn">Book Now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials" id="testimonials">
+        <div class="container">
+            <h2 class="section-title fade-in">What Our Customers Say</h2>
+            <div class="testimonials-slider fade-in">
+                <div class="testimonials-container">
+                    <div class="testimonial">
+                        <img src="/assets/images/Sarah Kamau.jpeg" alt="Customer 1" class="testimonial-img">
+                        <p class="testimonial-text">"The organic vegetable curry was absolutely delicious! I could taste the freshness of each ingredient. Belion Foods has definitely become my go-to restaurant for healthy, tasty food in Nairobi."</p>
+                        <h4 class="testimonial-name">Sarah Kamau</h4>
+                        <p class="testimonial-role">Food Blogger</p>
+                    </div>
+                    
+                    <div class="testimonial">
+                        <img src="/assets/images/John Odhiambo.jpeg" alt="Customer 2" class="testimonial-img">
+                        <p class="testimonial-text">"I appreciate their commitment to supporting local farmers. The farm-to-table concept is not just a trend here but a genuine philosophy. The grilled tilapia was spectacular!"</p>
+                        <h4 class="testimonial-name">John Odhiambo</h4>
+                        <p class="testimonial-role">Environmental Activist</p>
+                    </div>
+                    
+                    <div class="testimonial">
+                        <img src="/assets/images/Amina Wanjiku.jpeg" alt="Customer 3" class="testimonial-img">
+                        <p class="testimonial-text">"As someone with dietary restrictions, I was impressed by how accommodating the staff was. They modified my dish to meet my needs without compromising on flavor. Will definitely return!"</p>
+                        <h4 class="testimonial-name">Amina Wanjiku</h4>
+                        <p class="testimonial-role">Fitness Instructor</p>
+                    </div>
+                </div>
+                
+                <div class="testimonial-arrows">
+                    <div class="testimonial-arrow prev-arrow">
+                        <i class="fas fa-chevron-left"></i>
+                    </div>
+                    <div class="testimonial-arrow next-arrow">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <h2 class="fade-in">Subscribe to Our Newsletter</h2>
+            <p class="fade-in">Stay updated with our latest menu additions, special offers, and upcoming events.</p>
+            <form class="newsletter-form fade-in">
+                <input type="email" class="newsletter-input" placeholder="Enter your email address" required>
+                <button type="submit" class="newsletter-btn">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map" id="location">
+        <div id="map-container">
+            <!-- Map will be loaded here by JavaScript -->
+            <div style="height: 400px; background-color: #eee; display: flex; justify-content: center; align-items: center;">
+                <p>Map of Belion Foods Restaurant Location in Nairobi, Kenya</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="/assets/images/logo.png" alt="Belion Foods Logo">
+                        <span class="footer-logo-text">Belion Foods</span>
+                    </div>
+                    <div class="footer-info">
+                        <p>Belion Foods is committed to providing the finest organic dining experience in Kenya, supporting local farmers and sustainable practices.</p>
+                    </div>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#why-us">About Us</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#reservation">Reservation</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Opening Hours</h3>
+                    <ul class="footer-links">
+                        <li>Mon - Fri: 7:00 AM - 10:00 PM</li>
+                        <li>Sat: 8:00 AM - 11:00 PM</li>
+                        <li>Sun: 8:00 AM - 9:00 PM</li>
+                        <li>Public Holidays: 9:00 AM - 9:00 PM</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> Waiyaki Way, Nairobi, Kenya</li>
+                        <li><i class="fas fa-phone"></i> +254 712 345 678</li>
+                        <li><i class="fas fa-envelope"></i> info@harvesthaven.co.ke</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Belion Foods Organic Restaurant. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
