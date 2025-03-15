@@ -81,6 +81,29 @@ To add new menu items, follow the structure in the HTML file:
 </div>
 ```
 
+
+# TO REMEMBER SYSTEM PREFERENCE, DARK MODE / LIGHT MODE 
+
+```JS
+
+/* Add this to your existing JavaScript
+if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    document.body.classList.add('dark-mode');
+  }
+  
+  // Listen for changes in system preference
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+    if (event.matches) {
+      document.body.classList.add('dark-mode');
+    } else {
+      document.body.classList.remove('dark-mode');
+    }
+  });*/
+
+
+  ```
+
+
 ## Browser Support
 
 The website is compatible with:
