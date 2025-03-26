@@ -4,7 +4,7 @@ A modern, responsive website for an organic food restaurant in Kenya.
 The website features a clean, green-themed design with a focus on showcasing organic dishes and providing a seamless user experience.
 
 you can try live here 
-https://vercel.com/tallamgilberts-projects/belion-foods-organic-restaurant/7W1idEjdHG3xPMgNffQhK6vskm7c
+https://belion-foods-organic-restaurant.vercel.app/
 
 ## Features
 
