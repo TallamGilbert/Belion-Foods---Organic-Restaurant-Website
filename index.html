@@ -33,17 +33,9 @@
                 <div class="nav-icon theme-toggle">
                     <i class="fas fa-moon"></i>
                   </div>
-                <div class="nav-icons">
-                    <div class="nav-icon">
-                        <i class="fas fa-search"></i>
-                    </div>
-                    <div class="nav-icon">
-                        <i class="fas fa-user"></i>
-                    </div>
-                    <div class="nav-icon">
-                        <i class="fas fa-shopping-cart"></i>
-                        <span class="cart-count">7</span>
-                    </div>
+                  <div class="nav-icons">
+                    <span class="nav-icon user-icon" onclick="currentUser ? showProfile() : showLogin()"><i class="fas fa-user"></i></span>
+                    <span class="nav-icon cart-icon" onclick="document.getElementById('cartModal').style.display='flex';"><i class="fas fa-shopping-cart"></i></span>
                 </div>
                 
                 <div class="hamburger">
@@ -536,5 +528,85 @@
         <script defer src="assets/js/form-validation.js"></script>
         <script defer src="assets/js/slider.js"></script>
     </footer>
+    <!-- Login Modal -->
+<div id="loginModal" class="modal">
+    <div class="modal-content">
+        <button class="close-modal" onclick="closeModal('loginModal')">&times;</button>
+        <h2 style="text-align: center; margin-bottom: 2rem; color: var(--primary-color);">
+            <i class="fas fa-sign-in-alt"></i> Welcome Back
+        </h2>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="loginEmail">Email</label>
+                <input type="email" id="loginEmail" required>
+            </div>
+            <div class="form-group">
+                <label for="loginPassword">Password</label>
+                <input type="password" id="loginPassword" required>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%; margin-bottom: 1rem;">
+                <i class="fas fa-sign-in-alt"></i> Login
+            </button>
+        </form>
+        <p style="text-align: center; color: var(--text-secondary);">
+            Don't have an account? 
+            <a href="#" onclick="showRegister()" style="color: var(--primary-color); text-decoration: none;">Register here</a>
+        </p>
+    </div>
+</div>
+
+<!-- Register Modal -->
+<div id="registerModal" class="modal">
+    <div class="modal-content">
+        <button class="close-modal" onclick="closeModal('registerModal')">&times;</button>
+        <h2 style="text-align: center; margin-bottom: 2rem; color: var(--primary-color);">
+            <i class="fas fa-user-plus"></i> Create Account
+        </h2>
+        <form id="registerForm">
+            <div class="form-group">
+                <label for="registerName">Full Name</label>
+                <input type="text" id="registerName" required>
+            </div>
+            <div class="form-group">
+                <label for="registerEmail">Email</label>
+                <input type="email" id="registerEmail" required>
+            </div>
+            <div class="form-group">
+                <label for="registerPassword">Password</label>
+                <input type="password" id="registerPassword" required>
+            </div>
+            <div class="form-group">
+                <label for="registerPhone">Phone Number</label>
+                <input type="tel" id="registerPhone">
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%; margin-bottom: 1rem;">
+                <i class="fas fa-user-plus"></i> Create Account
+            </button>
+        </form>
+        <p style="text-align: center; color: var(--text-secondary);">
+            Already have an account? 
+            <a href="#" onclick="showLogin()" style="color: var(--primary-color); text-decoration: none;">Login here</a>
+        </p>
+    </div>
+</div>
+
+<!-- Cart Modal -->
+<div id="cartModal" class="modal">
+    <div class="modal-content" style="max-width: 600px;">
+        <button class="close-modal" onclick="closeModal('cartModal')">&times;</button>
+        <h2 style="text-align: center; margin-bottom: 2rem; color: var(--primary-color);">
+            <i class="fas fa-shopping-cart"></i> Shopping Cart
+        </h2>
+        <div id="cartItems">
+            <!-- Cart items will be loaded here -->
+        </div>
+        <div id="cartSummary" class="cart-summary" style="display: none;">
+            <div class="cart-total" id="cartTotal">Total: KSh 0.00</div>
+            <button class="btn btn-primary" style="width: 100%;" onclick="checkout()">
+                <i class="fas fa-credit-card"></i> Proceed to Checkout
+            </button>
+        </div>
+    </div>
+</div>
 </body>
 </html>
