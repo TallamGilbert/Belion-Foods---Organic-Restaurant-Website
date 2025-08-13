@@ -89,7 +89,7 @@ To add new menu items, follow the structure in the HTML file:
 
 ```JS
 
-/* Add this to your existing JavaScript
+/* Add this 
 if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
     document.body.classList.add('dark-mode');
   }
@@ -131,8 +131,7 @@ The website is compatible with:
 ## Contact
 
 For any inquiries or support, please contact:
-- Email: info@harvesthaven.co.ke
-- Phone: +254 712 345 678
+
 
 
 
